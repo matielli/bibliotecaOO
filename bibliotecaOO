@@ -1,0 +1,94 @@
+class Livros:
+    def __init__(self,titulo, autor, isbn, disponivel):
+        self._pesquisa = 0
+        self._definir_busca = ""
+        self._titulo_livro = 0
+        self._nome_autor = ""
+        self._isbn = 0
+        self._disponibilidade = 0
+        self._adicionar = ""
+        self._buscar_livro = ""
+
+    def definir_busca(self, busca):
+        return self._definir_busca 
+
+    def titulo(self, titulo_livro):
+        return self._titulo_livro
+        
+    def autor(self, nome_autor):
+        return self._nome_autor
+    
+    def isbn(self, isbn):
+        return self._isbn
+    
+    def disponibilidade(self, disponibilidade):
+        return self._disponibilidade
+    
+    def adicionar(self, titulo, autor, isbn, id):
+         return self.adicionar
+    
+    def buscar_livro(self, nome, autor, isbn, id):
+        return self._buscar_livro
+    
+         
+
+class Autor:
+      def __init__(self, nome, nacionalidade):
+            self._nome_autor = 0
+            self._nacionalidade_autor = 0
+      
+      def autor(self,nome_autor):
+            return nome_autor
+      
+      def nacionalidade(self,nacionalidade_autor):
+            return self._nacionalidade_autor
+      
+
+class Usuario:
+    def __init__(self, nome_usuario, id, livros_emprestados):
+        self._nome_usuario = 0
+        self._id = 0
+        self._livros_emprestados = 0
+
+        def nome_usuario(self, nome_usuario):
+            return nome_usuario
+        
+        def id(self, id):
+             return self._id
+        
+        def livros_emprestados(self, livros_emprestados):
+             return self._livros_emprestados
+
+def main():
+    liv = Livros()
+    Usu = Usuario()
+    Aut = Autor()
+
+    while True:
+        print("\nMenu de Busca:")
+        print("1. Livros")
+        print("2. Autores")
+        print("3. ISBN")
+        print("4. Datas Disponiveis")
+        print("5. Sair")
+
+        escolha = input("Escolha a operção (1/2/3/4) ou 5 para sair.")
+
+        if escolha == '5':
+                print("Encerrando a busca.")
+                break
+
+        if escolha == '1':
+                liv.definir_busca(Livros())
+                liv.adicionar(input("digite o nome do livre ")...)
+        elif escolha == '2':
+                liv.definir_busca(Livros, Autor())
+        elif escolha == '3':
+                liv.definir_busca(Livros())
+        elif escolha == '4':
+                liv.definir_busca(Livros())
+            
+        if escolha < 1 or escolha > 5:
+                print("Operação encerrada")
+
+main()
